@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dt</title>
+</head>
+<body>
+    <script>
+    let nome = prompt("Insira o nome do vendedor")
+    let salariofixo = Number(prompt("Insira o salário fixo"))
+    let totalvendas = Number(prompt("Insira o total de vendas"))
+    let comissao = (totalvendas / 100) * 15
+    let resultado = salariofixo + comissao
+    console.log(`O s{nome} recebeu R$ ${resultado.toFixed(2)}`)
+    </script>
+</body>
+</html>

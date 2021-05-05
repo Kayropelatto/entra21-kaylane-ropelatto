@@ -1,0 +1,41 @@
+1) console.log(!10) // ?
+    let numero =! 10
+    if (numero =! 10) {
+        console.log("o número é diferente de 10!")
+    }
+    console.log(`O valor do número é ${numero}`)
+
+
+
+
+
+
+// Exemplo 01
+        let numero = 10        
+        if (numero === 10) {
+            console.log("O número é igual a 10!")
+        }
+        console.log(`O valor do número é ${numero}`)
+        } else {
+            console.log("O número é menor ou igual a 10")
+        }
+
+
+
+
+3) 
+    let numero = 10
+    if (numero > 10) {
+        console.log("O Valor de A é maior que 10")
+    } else {
+        console.log("O valor de A é menor que 10")
+    }
+    
+
+        3) Escreva um script que receba uma valor A, verifique se o valor A é maior que 10 e
+mostre na tela "O valor A é maior que 10". 
+Entrada:            Saída:
+11                  O valor A é maior que 10
+                    Programa finalizado...
+ 
+9                   Programa finalizado... 

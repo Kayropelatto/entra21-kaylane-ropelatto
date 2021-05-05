@@ -1,0 +1,161 @@
+1) 
+    console.log("Oi meu nome é Kaylane!")
+
+2) 
+    console.log("Cadastrar Funcionário\nListar Funcionários\nEditar Funcionários\nDeletar Funcionário\nSair")
+
+3)
+    let admin 
+    let nome = "João"
+    admin = nome
+    console.log(nome) 
+
+    Correção:
+
+    let nome
+    let admin
+    nome = "João"
+    admin = nome
+    console.log(nome)
+
+4) 
+    console.log("Kaylane Ropelatto")
+    console.log(18)
+    console.log(60)
+    console.log(1.60)
+    console.log("47988954286")
+
+    Correção:
+
+    console.log(`nome: ${meuNome}`)
+    console.log(`idade: ${idade}`)
+    console.log(`peso: ${peso}`)
+    console.log(`altura: ${altura}`)
+    console.log(`telefone: ${telefone}`)
+
+5) 
+        let titulo = "A Revolução dos Bichos"
+        let edicao = "1ª Edição"
+        let autor = "George Orwell"
+        let dataDePublicacao = 1945
+        console.log(titulo) 
+        console.log(edicao)
+        console.log(autor)
+        console.log(dataDePublicacao) 
+
+        Correção: 
+
+        console.log(` Título : ${titulo}\n Edição : ${edição}\n Autor : ${autor}\n Data de Publicação : ${data_de_Publicação}`)
+
+6)
+    let dataNascimento 
+    let quantidadeDeFilhos
+    let usuarioLogado
+
+    Correção: 
+
+    let dataNascimento, quantidadeFilhos, usuarioLogado
+
+7)
+    let nome = "João"
+    console.log(`Olá ${1}`) // "Olá 1"
+    console.log(`Olá ${"nome"}`) // "Olá nome"
+    alert(`Olá ${nome}`) // Aparece uma caixa "Olá João"
+
+8) 
+    let x = 10
+    let y = 8
+    let area = (x * y) / 2 + 3 ** 4
+    console.log(area)
+// A saída de dados é o resultado da área, igual a 121
+
+9) 
+    let a = 2
+    let x = 1 + (a *= 2)
+    console.log(a, x)
+// Os valores de a e x são, respectivamente 4 e 5
+
+10)
+    A) "" + 1 + 0 // 1
+    B) "" - 1 + 0 // -1
+    C) 6 / "3" // 2
+    D) "2" * "3" // 6
+    E) 4 + 5 + "px" // 9 px
+    F) "$" + 4 + 5 // $45
+    G) "4" - 2 // 2
+
+11)
+    let altura = Number(prompt("Qual é a altura do retângulo?"))
+    let largura = Number(prompt("Qual é a largura do retângulo?"))
+    let area = largura * altura
+    let perimetro = (largura * 2) + (altura * 2)
+    console.log(`A área do retângulo é ${area}`)
+    console.log(`O perímetro do retângulo é ${perimetro}`)
+
+12)
+    let numero1 = Number(prompt("Escreva um número."))
+    let numero2 = Number(prompt("Escreva outro número."))
+    let soma = numero1 + numero2
+    console.log(`A soma entre esses dois números é de ${soma}`)
+
+13)
+    let nota1 = Number(prompt("Digite a 1º nota"))
+    let nota2 = Number(prompt("Digite a 2º nota"))
+    let media = (nota1 + nota2) / 2
+    console.log(`A média entre as notas é ${media}`)
+
+14) 
+   let num1 = Number(prompt("Digite o 1º número"))
+   let num2 = Number(prompt("Digite o 2º número"))
+   let num3 = Number(prompt("Digite o 3º número"))
+   let quadrado = (num1 **2) 
+   let quadrado2 = (num2 **2)
+   let quadrado3 = (num3 **2) 
+   console.log(`O numero ${num1} ao quadrado é ${quadrado}\n O número ${num2} ao quadrado é ${quadrado2}\n O número ${num3} ao quadrado é ${quadrado3}`)
+   
+15)
+    let A = 10
+    let B = 20
+    let aux = A
+    A = B
+    B = aux
+    console.log(A, B)
+
+16)
+    let dias = 30
+    let mes = Number(prompt("Insira a quantidade de meses"))
+    let resultado = dias * mes
+    console.log(`A quantidade de dias é de ${resultado}`)
+
+17)
+    let numero = Number(prompt("Insira o número"))
+    let antecessor = numero - 1
+    let sucessor = numero + 1
+    console.log(`O antecessor do número ${numero} é ${antecessor}, e o sucessor é ${sucessor}`)
+
+18) 
+    let raio = Number(prompt("Insira o valor do raio"))
+    let PI = 3.14159
+    let formula = (4 / 3) * PI * (raio **3)
+    console.log(`O resultado é ${formula.toFixed(3)}`)
+    
+19)
+    let base = Number(prompt("Insira o valor da base do triângulo"))
+    let altura = Number(prompt("Insira o valor da altura do triângulo"))
+    let area = (base * altura) / 2
+    console.log(`A área desse triângulo é de ${area.toFixed(2)}`)
+
+20)
+    let preco = Number(prompt("Insira o vaor do produto"))
+    let percentual = Number(prompt("Insira o percentual de desconto"))
+    let valordesconto = (percentual / 100) * preco
+    let resultado = preco - valordesconto
+    console.log(`Total ${resultado} \nDesconto ${valordesconto}`)
+
+21)
+    let nome = prompt("Insira o nome do vendedor")
+    let salariofixo = Number(prompt("Insira o salário fixo"))
+    let totalvendas = Number(prompt("Insira o total de vendas"))
+    let comissao = (totalvendas / 100) * 15
+    let resultado = salariofixo + comissao
+    console.log(`O s{nome} recebeu R$ ${resultado.toFixed(2)}`)
