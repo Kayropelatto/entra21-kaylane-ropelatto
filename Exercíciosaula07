@@ -78,15 +78,3 @@ Entrada:         Saída:
 12, 2, 10        O maior número é 12
 
 2, 10, 12        O maior número é 12
-
-
-
-
-
- let numero = 10        
-        if (numero === 10) {
-            console.log("O número é igual a 10!")
-        }
-        } else {
-            console.log("O número é menor ou igual a 10")
-        }

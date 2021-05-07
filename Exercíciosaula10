@@ -1,0 +1,75 @@
+1)
+
+    let i = 0
+    while (i < 10) {
+        console.log("Olá Mundo")
+        i++ 
+    }
+
+    let i = 0 
+    do {
+        console.log("Olá Mundo")
+        i++
+    } while (i < 10)
+
+    for (let i = 0; i < 10; i++) {
+        console.log("Olá Mundo")
+    }
+
+
+2)
+
+    let contador = 0
+        for (let i = 1; i < 11; i++) {
+            console.log(`Estou aparecendo pela ${i} na tela!`)
+        }
+
+    let contador = 0
+        let i = 1
+        while (i < 11) {
+            console.log(`Estou aparecendo pela ${i} na tela`)
+            i++
+        }
+
+    let contador = 0
+        let i = 1
+        do { 
+            console.log(`Estou aparecendo pela ${i} vez na tela`)
+            i++
+        } while (i < 11)
+
+3)
+
+    for (contador = 10; contador > -1; contador--) {
+        console.log(contador)
+    }
+    console.log("FIM!")
+
+
+4)
+
+    for (let i = 0; 1 < 3; i++) {
+        let numero1 = +prompt("Digite o primeiro número.")
+        let numero2 = +prompt("Digite o segundo número.")
+        let conta = numero1 - numero2
+        console.log(`${numero1} - ${numero2} = ${conta}`)
+    }
+
+5)
+    for ( let i = 0; i <= 100000; i+=1000 ) {
+        console.log(i)
+    }
+
+
+
+6) 
+    let numero1 = +prompt("Digite o 1º número.")
+    let numero2 = +prompt("Digite o 2º número.")
+    let numero3 = +prompt("Digite o 3º número.")
+    let numero4 = +prompt("Digite o 4º número.")
+    let numero5 = +prompt("Digite o 5º número.")
+    let soma = numero1 + numero2 + numero3 + numero4 + numero5
+    let media = soma / 5
+    console.log(`Soma = ${soma}\nMédia = ${media}`)
+
+7) 
