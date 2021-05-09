@@ -45,7 +45,7 @@
 
         Correção: 
 
-        console.log(` Título : ${titulo}\n Edição : ${edição}\n Autor : ${autor}\n Data de Publicação : ${data_de_Publicação}`)
+        console.log(` Título : ${titulo}\n Edição : ${edicao}\n Autor : ${autor}\n Data de Publicação : ${dataDePublicação}`)
 
 6)
     let dataNascimento 
@@ -76,7 +76,7 @@
 // Os valores de a e x são, respectivamente 4 e 5
 
 10)
-    A) "" + 1 + 0 // 1
+    A) "" + 1 + 0 // 10
     B) "" - 1 + 0 // -1
     C) 6 / "3" // 2
     D) "2" * "3" // 6
