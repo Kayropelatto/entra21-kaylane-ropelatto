@@ -25,14 +25,6 @@
     console.log(1.60)
     console.log("47988954286")
 
-    Correção:
-
-    console.log(`nome: ${meuNome}`)
-    console.log(`idade: ${idade}`)
-    console.log(`peso: ${peso}`)
-    console.log(`altura: ${altura}`)
-    console.log(`telefone: ${telefone}`)
-
 5) 
         let titulo = "A Revolução dos Bichos"
         let edicao = "1ª Edição"
