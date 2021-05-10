@@ -8,7 +8,14 @@
 </head>
 <body>
     <script>
-
+        let numero = Number(prompt("Digite o número"))
+        let resultado = ""
+         for ( let i = 0; i < numero; i++) {
+            if (i % 2 != 0) { 
+                resultado += `${i}, `
+            } 
+         }
+         console.log(resultado)
     </script>
 </body>
 </html>
