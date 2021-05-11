@@ -12,7 +12,7 @@
         i++
     } while (i < 10)
 
-    for (let i = 0; i < 10; i++) {
+    for ( i = 0; i < 10; i++) {
         console.log("Olá Mundo")
     }
 
@@ -72,12 +72,84 @@
     let media = soma / 5
     console.log(`Soma = ${soma}\nMédia = ${media}`)
 
+ou 
+
+    let soma = 0
+        for (let i = 0; i < 5; i++) {
+            let numeros = Number(prompt("Digite um número!"))
+            soma += numeros
+        }
+    let media = soma / 5 
+    console.log(`Soma = ${soma}\nMédia = ${media.toFixed(2)}`)
 
 7) 
- 
+    let numero = ""
+    let resultado = 0
+    let numero1 = Number(prompt("Digite um número"))
+    for (let i; i <= numero1; i++) {
+        if (i % 2 != 0) {
+            resultado = i
+        } }
 
 8) 
-    
+    let numero = Number(prompt("Digite um número"))
+    for (let i = 1; i <= 10; i++) {
+        let conta = numero * i 
+        console.log(`${numero} x ${i} = ${conta}`)
+    }
+
+9)
 
 
+10)
+    let par = 0
+    let impar = 0
+    for( let i = 0; i < 10; i++) {
+        let numero = Number(prompt("Digite um número")) 
+        if (numero % 2 === 0) {
+            par++
+        } else {
+            impar++
+        }
+    }
+    console.log(`Pares: ${par}\nÍmpares: ${impar}`)
 
+11) 
+    let intervalo = 0
+    let foraintervalo = 0
+    while (true) {
+        let numero = Number(prompt("Digite um número"))
+    if ( numero < 0) {
+        break
+    } 
+    if ( numero > 10 && numero < 20) {
+        intervalo++
+    } else {
+        foraintervalo++
+    }
+    }
+    console.log(`${intervalo} estão no intervalor\n${foraintervalo} não estão no intervalo`)
+
+12) // NÃO DEU CERTO
+            let valores = 0
+        let contador = 0
+        while (true) {
+            let numero = Number(prompt("Digite um número"))
+        if ( numero < 0) {
+            break
+        }
+        let media = (valores += numero)
+        contador++
+        }
+        console.log(media / contador)
+
+13) // FALTOU DEIXAR SEPARADO
+            let sequencia = ""
+        for (let i = 0; i < 16; i++) {
+            sequencia += (7 * i)
+        }
+        console.log(sequencia)
+
+14) 
+
+15) 
