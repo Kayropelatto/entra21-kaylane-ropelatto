@@ -12,7 +12,7 @@
         i++
     } while (i < 10)
 
-    for ( i = 0; i < 10; i++) {
+    for ( let i = 0; i < 10; i++) {
         console.log("Olá Mundo")
     }
 
@@ -82,7 +82,7 @@ ou
     let media = soma / 5 
     console.log(`Soma = ${soma}\nMédia = ${media.toFixed(2)}`)
 
-7) 
+7) // não tá dando certo
     let numero = ""
     let resultado = 0
     let numero1 = Number(prompt("Digite um número"))
@@ -153,3 +153,23 @@ ou
 14) 
 
 15) 
+    let filhos = 0
+    let salarioPessoa = 0
+    let maiorSalario = 0
+    let contador = 0
+    while (true) {
+        let salario = Number(prompt("Digite o salário"))
+        let quantidadeFilhos = Number(prompt("Digite a quantidade de filhos"))
+    if (salario < 0) {
+        break
+    }
+    contador++
+    if ( salario > maiorSalario) {
+        maiorSalario = salario
+    }
+    salarioPessoa += salario
+    filhos += quantidadeFilhos
+    }
+    console.log(`Média salarial: ${(salarioPessoa / contador).toFixed(2)}\nMédia do número de filhos: ${(filhos / contador)}\nMaior salário: ${maiorSalario}`)
+
+16)
