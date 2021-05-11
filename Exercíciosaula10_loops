@@ -1,21 +1,23 @@
 1)
-
+{
     let i = 0
     while (i < 10) {
         console.log("Olá Mundo")
         i++ 
     }
-
+} 
+{
     let i = 0 
     do {
         console.log("Olá Mundo")
         i++
     } while (i < 10)
-
+} 
+{
     for ( let i = 0; i < 10; i++) {
         console.log("Olá Mundo")
     }
-
+}
 
 2)
 
@@ -145,8 +147,10 @@ ou
 
 13) // FALTOU DEIXAR SEPARADO
             let sequencia = ""
+            let soma = 0
         for (let i = 0; i < 16; i++) {
-            sequencia += (7 * i)
+            soma += 7 
+            sequencia += soma 
         }
         console.log(sequencia)
 
@@ -159,10 +163,13 @@ ou
     let contador = 0
     while (true) {
         let salario = Number(prompt("Digite o salário"))
+        
+        if (salario < 0) {
+            break
+        }
+
         let quantidadeFilhos = Number(prompt("Digite a quantidade de filhos"))
-    if (salario < 0) {
-        break
-    }
+   
     contador++
     if ( salario > maiorSalario) {
         maiorSalario = salario
