@@ -1,0 +1,84 @@
+1) B
+
+2) D
+
+3)
+    let numero = Number(prompt("Digite o raio!"))
+    let pi = 3.14159
+    let area = pi * (numero ** 2)
+    console.log(`A área da circunferência de raio ${numero} é ${area.toFixed(2)}`)
+
+4) // SALVEI COMO IMAGEM NA PASTA <TEM DOIS ARQUIVOS, UM COM FUNDO BRANCO E OUTRO TRANSPARENTE>
+
+5) 
+    let nome = prompt("Digite o nome do aluno")
+    let nota1 = Number(prompt("Digite a 1ª nota!"))
+    let nota2 = Number(prompt("Digite a 2ª nota!"))
+    let media = (nota1 + nota2) / 2
+    if (media >= 6) {
+        console.log("APROVADO")
+    } else {
+        console.log("REPROVADO")
+    }
+
+6) 
+    let numero1 = Number(prompt("Digite o 1º número!"))
+    let numero2 = Number(prompt("Digite o 2º número"))
+    if (numero1 < numero2) {
+        console.log(`O número ${numero2} é o maior`)
+    } else if (numero1 === numero2) {
+        console.log("Os números são iguais!")
+    } else {
+        console.log(`O número ${numero1} é o maior`)
+    }
+
+7) 
+    let numero1 = Number(prompt("Digite o 1º número"))
+    let numero2 = Number(prompt("Digite o 2º número"))
+    let numero3 = Number(prompt("Digite o 3º número"))
+    if (numero1 > numero2 && numero1 > numero3) {
+        console.log(`O número ${numero1} é o maior`)
+    } else if (numero2 > numero1 && numero2 > numero3) {
+        console.log(`O número ${numero2} é o maior`)
+    } else {
+        console.log(`O número ${numero3} é o maior`)
+    }
+
+8)
+    let numero = Number(prompt("Digite um valor!"))
+    if (numero >= 20 && numero <= 50 ) {
+        console.log(`O número ${numero} está incluso no intervalo entre 20 e 50`)
+    } else {
+        console.log("O número está fora do intervalo")
+    }
+
+9)
+    let sexo = prompt("Digite seu sexo\nF - feminino\nM - masculino".toUpperCase());
+    let altura = Number(prompt("Digite sua altura"))
+    switch (sexo) {
+    case "f": 
+        let calculoF = (62.1 * altura) - 44.7
+        console.log(calculoF.toFixed(2))
+    break
+    case "m":
+        let calculoM = (72.7 * altura) - 58
+        console.log(calculoM.toFixed(2))
+    break
+    default:
+        console.log("erro")
+    }
+
+10)
+    let altura = Number(prompt("Digite sua altura!"))
+    let peso = Number(prompt("Digite seu peso"))
+    let calculo = peso / (altura * altura)
+    if (calculo < 18.5) {
+        console.log("Abaixo do peso")
+    } else if (calculo >= 18.5 && calculo <=24.9) {
+        console.log("Peso normal")
+    }
+    if (calculo >= 25 && calculo <= 29.9) {
+        console.log("Acima do peso")
+    } else if (calculo >= 30) {
+        console.log("Obeso")
+    }

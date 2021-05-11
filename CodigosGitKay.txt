@@ -1,0 +1,92 @@
+Lista de Códigos do Git
+
+GIT INIT
+CODE
+GIT ADD .
+GIT STATUS
+GIT COMMIT - M"..."
+GIT LOG
+git branch -M main
+git remote add origin https//...
+git push -u origin main
+git clone https... <link que o github passa>
+
+EXTRAS:
+
+git config --global user.name "Kaylane Ropelatto"
+git config --global user.email "kay.ropelatto.kay@gmail.com"
+git restore --staged <nome do arquivo>
+
+
+
+
+Iniciar offline
+
+Criar pasta, botão direito em Git Bash Here
+
+Iniciar o repositório : git init
+
+Inicia o Visual Studio Code : Code . 
+
+CNTRL <"'> | ABRE O TERMINAL - 
+
+<no final>
+Pra ligar o repositório, código: git add pr <da tab> 
+
+Para verificar o status dos arquivos e do repositório com o código: git status 
+
+Pra colocar o que foi feito no commit, usa-se o código: git commit -m"...." - entre as aspas coloca o que foi feito
+
+Agora o repositório local esta feito, com isso sempre conseguimos voltar a versões anteriores.
+
+Para ver versões anteriores código: git log
+
+Para definir um novo usuário (no curso dois alunos usam o mesmo computador) código git config --global user.name "Kaylane Ropelatto"
+git config --global user.email "kay.ropelatto.kay@gmail.com" muda email
+
+git restore --staged <nome do arquivo> Redefinir algo pendente.
+
+_______________________
+
+Relacionar o código do computador para a nuvem (GitHub site) no navegador
+
+Criar repositório e adicionar os códigos que aparecem na tela dentro do arquivo no computador na ordem:
+
+git branch -M main
+
+git remote add origin https//...
+
+git push -u origin main
+
+_________________
+
+
+Para atualizar a pasta do curso é  Git Bash Here e o código: git pull
+
+_______________
+
+
+Para passar do repositório online pro computador usa-se o código git clone https... <link que o github passa>
+
+
+____________
+
+Códigos aula 07 
+
+Let é uma caixa de informações
+Let idadeDaKaylane <denominação de let> = "para texto entre"  }String -> Caracteres (""; '': ``)
+Let .......... = sem "" para numeros    } Number
+Console.log ("texto que vai no Console")
+Console. log (idadeDaKaylane) <pra variavel let aparecer no console>
+// comentário de linha
+/*
+	COMENTARIO
+	DE
+	PARÁGRAFO
+*/
+alert("...") <caixinha de texto que aparece no html | trava o restante do código>
+
+
+_________________
+
+
