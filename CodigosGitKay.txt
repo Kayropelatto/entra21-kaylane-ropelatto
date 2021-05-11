@@ -90,3 +90,7 @@ alert("...") <caixinha de texto que aparece no html | trava o restante do códig
 _________________
 
 
+
+
+let vetor = [ // aqui vai os valores // ]
+let valorRetirado = vetor.pop()
