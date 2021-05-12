@@ -50,12 +50,13 @@
 
 4)
 
-    for (let i = 0; 1 < 3; i++) {
+    for (let i = 0; i <= 3; i++) {
         let numero1 = +prompt("Digite o primeiro número.")
         let numero2 = +prompt("Digite o segundo número.")
         let conta = numero1 - numero2
         console.log(`${numero1} - ${numero2} = ${conta}`)
     }
+    console.log("FIM!")
 
 5)
     for ( let i = 0; i <= 100000; i+=1000 ) {
@@ -64,7 +65,8 @@
 
 
 
-6) 
+6) // REFAZER
+for (let i = 0; i <=6; i++) {
     let numero1 = +prompt("Digite o 1º número.")
     let numero2 = +prompt("Digite o 2º número.")
     let numero3 = +prompt("Digite o 3º número.")
@@ -72,6 +74,7 @@
     let numero5 = +prompt("Digite o 5º número.")
     let soma = numero1 + numero2 + numero3 + numero4 + numero5
     let media = soma / 5
+    }
     console.log(`Soma = ${soma}\nMédia = ${media}`)
 
 ou 
@@ -84,14 +87,7 @@ ou
     let media = soma / 5 
     console.log(`Soma = ${soma}\nMédia = ${media.toFixed(2)}`)
 
-7) // não tá dando certo
-    let numero = ""
-    let resultado = 0
-    let numero1 = Number(prompt("Digite um número"))
-    for (let i; i <= numero1; i++) {
-        if (i % 2 != 0) {
-            resultado = i
-        } }
+7) 
 
 8) 
     let numero = Number(prompt("Digite um número"))
@@ -101,20 +97,46 @@ ou
     }
 
 9)
+    let valores = 0,
+        soma = 0
+        for (let i = 0; i < 5; i++) {
+            valores = +prompt("Digite um número")
+        
+            if (valores < 0) {
+                soma += 1
+                // soma = soma * 1 
+        }
+    }
+        console.log(soma)
 
 
 10)
-    let par = 0
-    let impar = 0
-    for( let i = 0; i < 10; i++) {
-        let numero = Number(prompt("Digite um número")) 
-        if (numero % 2 === 0) {
-            par++
-        } else {
-            impar++
+    let par = 0,
+        impar = 0
+            for (let i = 0; i < 10; i++) {
+            let numero = Number(prompt("Digite um número")) 
+                if (numero % 2 === 0) {
+                    par++
+                } else {
+                    impar++
         }
     }
     console.log(`Pares: ${par}\nÍmpares: ${impar}`)
+    
+    OU
+
+          let contadorPares = 0,
+          contadorImpares = 0
+      for (let i = 0; i < 10; i++) {
+        let numero = +prompt(`Digite o ${i + 1}º número`) 
+        
+        if (numero % 2 === 0) {
+          contadorPares++
+        } else {
+          contadorImpares++
+        }                
+      }
+      console.log(`Pares: ${contadorPares}\nÍmpares: ${contadorImpares}`)
 
 11) 
     let intervalo = 0
@@ -132,29 +154,37 @@ ou
     }
     console.log(`${intervalo} estão no intervalor\n${foraintervalo} não estão no intervalo`)
 
-12) // NÃO DEU CERTO
-            let valores = 0
-        let contador = 0
-        while (true) {
-            let numero = Number(prompt("Digite um número"))
-        if ( numero < 0) {
-            break
-        }
-        let media = (valores += numero)
-        contador++
-        }
-        console.log(media / contador)
+12)
+ 	let	contador = 0,
+		soma = 0
+	for (let i = 0; i < 5; i++) {
+		let	numero = +prompt("Digite um número")
+			
+			if (numero < 0) {
+				break
+			}
 
-13) // FALTOU DEIXAR SEPARADO
-            let sequencia = ""
-            let soma = 0
-        for (let i = 0; i < 16; i++) {
-            soma += 7 
-            sequencia += soma 
-        }
-        console.log(sequencia)
+		soma += numero
+		contador++
+	}
+		console.log (soma / contador.toFixed(2))
+
+13) 
+    let	soma = 0,
+        sequencia = " " // string
+    for (let i = 0; i < 15; i++) {
+        soma += 7
+        sequencia += soma + " " // Para deixar o ESPAÇO USEI UMA VARIAVEL SEQUENCIA E DISSE QUE ELA VALIA UM STRING
+    } 
+    console.log(sequencia)
 
 14) 
+    let numero = +prompt("Digite um número")
+    let fatorial = numero
+        for (let i = numero - 1; i > 0; i--) {
+        fatorial *= i
+        }
+    console.log(fatorial)
 
 15) 
     let filhos = 0
@@ -180,3 +210,69 @@ ou
     console.log(`Média salarial: ${(salarioPessoa / contador).toFixed(2)}\nMédia do número de filhos: ${(filhos / contador)}\nMaior salário: ${maiorSalario}`)
 
 16)
+    let menorValor = 0
+    let maiorValor = 0
+    for (let i = 0; i < 5; i++) {
+        let numero = +prompt("Digite um número")
+
+        if ( i == 0) {
+            menorValor = numero
+            maiorValor = numero
+        }
+
+        if (numero > maiorValor) {
+            maiorValor = numero
+        }
+        
+        if (numero < menorValor) {
+            menorValor = numero
+        }
+    }
+    console.log(`O menor valor digitado é ${menorValor}\nO maior valor digitado é ${maiorValor}`)
+
+    // Como sintetizar com max e min?
+    		let menorValor = 0
+		let maiorValor = 0
+		for (let i = 0; i < 5; i++) {
+			let numero = +prompt("Digite um número")
+			let max = Math.max(numero);
+			let min = Math.min(numero); // falta que informação?
+		}
+		console.log(`O menor valor digitado é ${min}\nO maior valor digitado é ${max}`)
+
+17) 
+		let jose = 0
+		let maria = 0
+		let joao = 0 
+		let nulo = 0
+		let branco = 0
+		
+		while (true) {
+		let menu = +prompt("Digite o seu voto\n1 - José Bolinha\n2 - Maria Nascimento\n3 - João da Silva\n4 - Voto Nulo\n5 - Voto em Branco")
+		
+			if (menu === 0)
+				break
+		
+		switch (menu) {
+		case 1:
+			jose++
+		break 
+		case 2:
+			maria++
+		break
+		case 3:  
+			joao++
+		break
+		case 4:
+			nulo++
+		break
+		case 5: 
+			branco++
+		break
+		default:
+			console.log(Erro)
+	}
+}
+	console.log(`Total de votos\nJosé Bolinha: ${jose} voto/s\nMaria Nascimento: ${maria} voto/s\nJoão da Silva: ${joao} voto/s\nVotos Nulos: ${nulo} voto/s\nVotos em Branco: ${branco} voto/s`)
+
+18)
