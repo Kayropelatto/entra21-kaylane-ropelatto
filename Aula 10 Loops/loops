@@ -7,11 +7,23 @@
         Cada execução que um loop faz se chama *ITERAÇÃO*
         No JavaScript são três estruturas: 
 
-        while
+        ° while
 
-        do / while
+        ° do / while
 
-        for
+        ° for
+
+
+
+
+        ** VARIÁVEIS CONTADORAS **
+
+        São variáveis que guardam valor inteiros.
+        Os loops usam elas para saber quando eles tem que parar de repetir. 
+
+        Indicadores --->  i ; j ; x
+
+
 
 
         ** WHILE **
@@ -27,12 +39,13 @@
 
         Exemplo: 
 
-        let i = +prompt("Digite um número")   // declaro uma variável fora
+        let i = 0
         while (i < 10) {
             console.log(i)
             i++ 
         }
 
+        Usa quando não se sabe a quantidade exata de repetições
         A partir do número que o usuário digita o loop vai ser feito 10 vezes, <teste de mesa>
         Essa variavel que declaramos serve como um somador, o número vai ser verificado na condição, e então vai aparecer na tela,
         pós isso ele vai ser somado a +1 graças ao i++ até que a condição se torne falsa. 
@@ -41,7 +54,8 @@
         
         ** DO / WHILE **
 
-        Similar ao while; mas ele executa o código primeiro e depois confere com a condição. // executa o código no mínimo uma vez
+        Similar ao while; mas ele executa o código primeiro e depois confere com a condição.  
+        Executa o código no mínimo uma vez
 
         let variavel = coloco antes
         do {
@@ -64,32 +78,60 @@
         Estrutura + utilizada
         Usa-se quando se sabe a quantidade de vezes que se quer repetir o código
 
-        for (começo <declara a variavel>; condição <da variavel>; passo <++variavel++ ou --variavel--) {
+        for (começo <declara a variavel>; condição <da variavel>; passo <++variavel++ ou --variavel-->) {
             // codigo que repete
         }
 
         exemplo:
-
-        for (let i = 0; i < 10; i++)
-
-        for (let i = 0; i < 3; i++) {
+        
+        for (let i = 0; i < 10; i++) {
             console.log(i)
         }
+
+        OUTPUT: 
+        0
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+
+        _____________________
+
+
+
+
+        ** BREAK **
+
+        O loop termina quando a condição se torna falsa, com o break dá pra forçar o fim dela 
         
-        /*
-        Break
-        Normalmente um loop termina quando a sua condição se torna falsa. Porém
-        nós conseguimos forçar o seu fim através do uso do break.
+
+        variavel acumuladora (Ex.: a)
+        um código de loop {
+                let k = loop código que vai repetir
+
+            if (codigo dentro do loop <variavel>) {
+                    break <<<<<<BREAK>>>>>> // FICA AQUI O BREAK 
+            }
+            
+            a <variavel acumuladora> += k (variavel declarada dentro) // += serve: a = a + k
+
+        }
+
+        exemplo: 
+
+        Peça ao usuário uma série de números e mostre o resultado da soma, quando nenhum número for digitado o programa termine:
         
-        Por exemplo, o loop abaixo pede para o usuário uma série de números e termina
-        quando nenhum número for digitado:
-        */
 
         let soma = 0 // Variável acumuladora
         while (true) {
             let valor = Number(prompt("Digite um número"))
             
-            if (!valor) {
+            if (!valor) {  // o código só funciono adicionando o ! <serve como uma negação do valor> 
                 break
             }
 
@@ -97,24 +139,35 @@
         }
         console.log(`Soma: ${soma}`)
 
-        /*
-        Continue
 
-        O continue é similar ao break, porém, quando ele é utilizado ele para a iteração
-        atual e força o loop a começar a próxima iteração.
-        */
+
+
+        ** CONTINUE **
+
+        Similar ao break, mas ele para o loop atual e força pra começar o próximo loop
 
         for (let i = 0; i < 10; i++) {
-            if (i % 2 == 0) {
-                continue
+            if (i % 2 === 0) {
+                continue // <<<<<<<<CONTINUE>>>>>>>>>
             }
-
             console.log(i)
         }
         
-        /*
-        É possível aninhar estruturas de repetição:        
-        */
+        OUTPUT: 
+        1
+        3
+        5
+        7
+        9
+
+
+        _____________________
+
+
+
+     ** JUNTAR ESTRUTURAS DE REPETIÇAO **
+        
+        ex: 
 
         let contador = 0
         for (let i = 0; i < 2; i++) {
@@ -123,20 +176,20 @@
             }
         }
 
-        /*
+
+
+
+        ** OPERADORES **
+
         Uso do operador ++ ou --
+
+
         prefixo = ++variavel
         sufixo = variavel++
-        */
        
+
         let teste = 0
         console.log(teste++)
         console.log(++teste)
 
 
-        ** VARIÁVEIS CONTADORAS **
-
-        São variáveis que guardam valor inteiros.
-        Os loops usam elas para saber quando eles tem que parar de repetir. 
-
-        Indicadores --->  i ; j ; x

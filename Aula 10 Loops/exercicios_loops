@@ -1,0 +1,150 @@
+1) 
+    let i = 0
+    while (i < 10) {
+        console.log("Olá Mundo!")
+        i++
+    }
+
+    for (let i = 0; i < 10; i++) {
+        console.log("Olá Mundo!")
+    }
+
+        let i = 0
+        do {
+            console.log("Olá Mundo!")
+            i++
+        } while ( i < 10)
+
+2)
+    for (let contador = 0; contador < 11; contador++) {
+        console.log(`Estou aparecendo pela ${contador + 1}ª vez na tela!`)
+    }
+
+    let contador = 0
+    while (contador < 11) {
+        console.log(`Estou aparecendo pela ${contador + 1}ª vez na tela!`)
+        contador++
+    }
+
+    let contador = 0
+    do {
+        console.log(`Estou aparecendo pela ${contador + 1}ª vez na tela`)
+        contador++
+    } while (contador < 11)
+    
+3) 
+        for(let i = 10; i >= 0 ; i--) {
+            console.log(i)
+        }
+        console.log("FIM!")
+
+        
+        let i = 10
+        while (i >= 0) {
+            console.log(i)
+            i--
+        }
+        console.log("FIM!")
+
+4)     
+    let conta = 0
+    let numero1 = 0
+    let numero2 = 0
+    let contador = 0
+    for(let i = 0; i < 3; i++) {
+        numero1 = Number(prompt("Digite um número"))
+        numero2 = Number(prompt("Digite um número"))
+        soma = numero1 - numero2
+        console.log(`${numero1} - ${numero2} = ${soma}`)
+    }
+
+5) 
+    for (let numero = 0; numero <= 100000; numero+=1000) { // numero = numero + 1000
+        console.log(numero)
+    }
+
+6) 
+    let soma = 0
+    let media = 0
+    for (let i = 0; i < 5; i++) {
+        let numero = Number(prompt("Digite um número"))
+        soma += numero // soma = soma + numero
+        media = soma / 5
+    }
+    console.log(`Soma: ${soma}\nMédia: ${media.toFixed(2)}`)
+
+7)
+    let numeroN = Number(prompt("Digite um número"))
+    while(numeroN > 0) {
+        --numeroN
+        if (numeroN % 2 === 0) {
+            continue
+        } else {
+            console.log(numeroN)
+        }
+    }
+
+
+        let numeroN = Number(prompt("Digite um número"))
+        let resultado = 0
+        let lista = " "
+
+            for ( let i = 0; i <= numeroN; i++) {
+                if (i % 2 !== 0) {
+                    resultado = i
+                    if ( i === numeroN || i === numeroN - 1) {
+                        lista += resultado
+                } else {
+                    lista += resultado + ", "
+                }
+                }
+            }
+            console.log(lista)
+
+8)
+    let numero = Number(prompt("Digite um número"))
+    for (let i = 1; i < 10; i++) {
+        let resultado = numero * i
+        console.log(`${numero} x ${i} = ${resultado}`)
+    }
+
+9) 
+    let soma = 0
+    let valor = 0
+
+    for (let i = 0; i < 5; i++) {
+        valor = Number(prompt("Digite um número"))
+        if (valor < 0) {
+            soma += 1
+        }
+    }
+    console.log(soma)
+
+10)
+    let numeros = 0
+    let pares = 0
+    let impares = 0
+    for (let i = 0; i < 10; i++) {
+        numeros = Number(prompt("Digite um número"))
+        if (numeros % 2 === 0) {
+            pares += 1
+        } else {
+            impares += 1
+        }
+    }
+    console.log(`Pares: ${pares}\nÍmpares: ${impares}`)
+
+11)
+    let i = 0
+    let contador = 0
+    let fora = 0
+    while (i > 0) {
+        i++
+        let numeros = Number(prompt("Digite um número"))
+        if (numeros >= 10 && numero <= 20) {
+            contador += 1
+        } else {
+            fora += 1
+        }
+    }
+    console.log(`${contador} números estão no intervalo\n${fora} números estão fora do intervalo`)

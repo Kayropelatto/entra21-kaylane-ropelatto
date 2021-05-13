@@ -8,12 +8,19 @@
 </head>
 <body>
     <script>
-        let i = +prompt("Digite um número")   // declaro uma variável fora
-        while (i < 10) {
-            console.log(i)
-            i++ // se não usar essa linha ele vai ficar repetindo sem parar e travar
+    let i = 0
+    let contador = 0
+    let fora = 0
+    while (i > 0) {
+        let numeros = Number(prompt("Digite um número"))
+        i++
+        if (numeros >= 10 && numero <= 20) {
+            contador += 1
+        } else {
+            fora += 1
         }
-
+    }
+    console.log(`${contador} números estão no intervalo\n${fora} números estão fora do intervalo`)
 	</script>
 </body>
 </html>
