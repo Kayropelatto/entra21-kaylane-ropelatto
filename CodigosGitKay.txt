@@ -99,6 +99,7 @@ let valorRetirado = vetor.pop()
 
 
 -------------
+Site: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators
 
 Operadores de atribuição
 
