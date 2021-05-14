@@ -8,19 +8,15 @@
 </head>
 <body>
     <script>
-    let i = 0
-    let contador = 0
-    let fora = 0
-    while (i > 0) {
-        let numeros = Number(prompt("Digite um número"))
-        i++
-        if (numeros >= 10 && numero <= 20) {
-            contador += 1
-        } else {
-            fora += 1
+        let valor = []
+        for (let i = 6; i > -1; i--) {
+            valor[i] = +prompt("Digite um número")
+            if (valor[i] % 2 !== 0){
+                valor.splice(1,i)
+                i++
+            }
         }
-    }
-    console.log(`${contador} números estão no intervalo\n${fora} números estão fora do intervalo`)
-	</script>
+        console.log(valor)
+        </script>
 </body>
 </html>

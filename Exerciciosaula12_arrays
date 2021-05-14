@@ -9,3 +9,78 @@
     console.log(vetor)
 
 2) 
+    let vetor = [],
+    maior,
+    posicao = 0
+
+    for (let i = 0; i < 5; i++) {
+        vetor[i] = +prompt(`Digite o ${i + 1}º valor`)
+        if (i === 0) {
+            maior = vetor[i]
+        } else if ( vetor[i] > maior) {
+            maior = vetor[i]
+            posicao = i
+        }
+    }
+console.log(`O maior número é ${maior} no índice ${posicao}`)
+console.log(vetor)
+
+3)
+    let vetor = [],
+        menor = 0,
+        maior = 0
+
+    for ( let i = 0; i < 5; i++) {
+            vetor[i] = +prompt(`Digite o ${i + 1}} número`)
+        if (i === 0) {
+            menor = vetor[i]
+        }else if ( vetor[i] > maior) {
+            maior = vetor[i]
+        } else if (vetor[i] < menor) {
+            menor = vetor[i]
+        }
+    }
+    
+    console.log(`Vetor: ${vetor}\nO maior elemento: ${maior}\nO menor elemento ${menor}`)
+
+4) 
+    let vetor = []
+    let vetorSubstituto = []
+    
+    for (let i = 0; i < 5; i++) {
+        vetor[i] = +prompt(`Digite o ${i + 1}º número`)
+    }
+
+    for (let i = vetor.length - 1; i >= 0; i--) {
+        vetorSubstituto[4 - i] = vetor[i]
+    }
+    console.log(vetorSubstituto)
+    console.log(vetor)
+
+5) 
+ 
+6)
+    let a = []
+    let soma = 0
+    for (let i = 0; i < 6; i++) {
+        a[i] = +prompt("Digite um número")
+        soma = a[0] + a[1] + a[5]
+        a[4] = 100
+    }
+    console.log(`A soma entre os números ${a[0]}, ${a[1]} e ${a[5]} é igual a ${soma}`)
+    console.log(a)
+
+7)
+    let vetor = [],
+        vetor2 = [],
+
+    for (let i = 0; i < 5; i++) {
+        vetor[i] = +prompt(`Digite o ${i + 1}º número`)
+        vetor2[i] = vetor[i] ** 2
+    }
+    console.log(vetor)
+    console.log(vetor2)
+
+8)
+
+
