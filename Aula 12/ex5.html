@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let notas = [],
+            media = 0,
+            maiorNota = 0,
+            i = 0,
+            acumularNotas = 0,
+            nota = 0
+
+        while (i > 0) {
+            nota[i] = +prompt("Digite a nota de um aluno")
+        
+
+            if(i < 0) {
+                break
+            }
+
+            notas[i] = nota
+            i++
+        
+        }
+        let (let nota of notas) {
+            if(nota > maiorNota) {
+                maiorNota = nota
+                acumuladorNotas += nota
+            }
+        }
+        
+        media = acumuladorNotas / notas.length
+
+        console.log(`Notas: ${notas}\nMédia da turma: ${media}`)
+    </script>
+</body>
+</html>

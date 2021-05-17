@@ -7,25 +7,26 @@
             pares++
     }
     }
+    console.log(`Vetor: ${vetor}`)
     console.log(`A quantidade de números pares digitados foi ${pares}`)
-    console.log(Vetor: ${vetor})
 
 2) 
     let vetor = [],
-    maior,
-    posicao = 0
+        maior,
+        posicao = 0
 
     for (let i = 0; i < 5; i++) {
         vetor[i] = +prompt(`Digite o ${i + 1}º valor`)
-        if (i === 0) {
-            maior = vetor[i]
-        } else if ( vetor[i] > maior) {
-            maior = vetor[i]
-            posicao = i
-        }
+
+            if (i === 0) {
+                maior = vetor[i]
+            } else if ( vetor[i] > maior) {
+                maior = vetor[i]
+                posicao = i
+            }
     }
-console.log(`O maior número é ${maior} no índice ${posicao}`)
-console.log(vetor)
+    console.log(`O maior número é ${maior} no índice ${posicao}`)
+    console.log(vetor)
 
 3)
     let vetor = [],
@@ -42,7 +43,7 @@ console.log(vetor)
             menor = vetor[i]
         }
     }
-    
+
     console.log(`Vetor: ${vetor}\nO maior elemento: ${maior}\nO menor elemento ${menor}`)
 
 4) 
@@ -60,7 +61,22 @@ console.log(vetor)
     console.log(vetor)
 
 5) 
-    let vetorNome = []
+     // 5 -> Binary Search
+    let nomes = []
+    for (let i = 0; i < 5; i++) {
+        nomes[i] = prompt("Digite um nome")
+    }
+
+    let nomeProcurado = prompt("Digite o nome desejado")
+
+    let achou
+    for (let i = 0; i < 5; i++) {
+        if (nomes[i] === nomeProcurado) {                    
+            console.log("Achei!")
+            achou = true
+            break
+        }
+    }
     
  
 6)
@@ -166,4 +182,33 @@ console.log(vetor)
 
         13) 
 
+        let notas = [],
+            media = 0,
+            maiorNota = 0,
+            i = 0,
+            acumularNotas = 0,
+            nota = 0
+
+        while (i > 0) {
+            notas[i] = +prompt("Digite a nota de um aluno")
+           
+
+            if(i < 0) {
+                break
+            }
+
+             notas[i] = nota
+             i++
+           
+        }
+        let (let nota of notas) {
+            if(nota > maiorNota) {
+                maiorNota = nota
+                acumuladorNotas += nota
+            }
+        }
+        
+        media = acumuladorNotas / notas.length
+
+        console.log(`Notas: ${notas}\nMédia da turma: ${media}`)
 
