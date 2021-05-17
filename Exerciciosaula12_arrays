@@ -82,5 +82,87 @@ console.log(vetor)
     console.log(vetor2)
 
 8)
+            let valores = 0,
+        pares = []
+    
+    for (let i = 6; i > 0;) {
+        valores = +prompt("Digite um valor")
+    if (valores % 2 === 0) {
+        i--
+        pares[i] = valores
+    } }
+    console.log(pares)
+
+9) 
+    let vetor = []
+    let valorX = 0
+    let valorY = 0
+        for (let i = 0; i < 8; i++) {
+            vetor[i] = +prompt("Digite um valor")
+        }
+
+    for (let i = 0; i < 1;) {
+        valorX = +prompt("Digite um índice (0 à 7)")
+        valorY = +prompt("Digite um índice (0 à 7)")
+    if (valorX > 0 && valorX < 7 && valorY > 0 && valorY < 7) {
+        i++
+        break
+    }
+    console.log("ERRO")
+    }
+    let soma = vetor[valorX] + vetor[valorY]
+    console.log(soma)
+
+    10) 
+    let valores = []
+    let positivos = 0
+    let negativos = 0
+    for (let i = 0; i < 10; i++) {
+        valores[i] = +prompt("Digite um número")
+        if (valores[i] < 0) {
+            negativos++
+        } else {
+            positivos += valores[i]
+        }
+    }
+    console.log(`Negativos ${negativos}\nSoma dos positivos: ${positivos}`)
+
+    11)
+            let numero = []
+        let posicaoMaior = 0
+        let posicaoMenor = 0
+        let maiorNumero = 0
+        let menorNumero = 0
+        for (let i = 0; i < 5; i++) {
+            numero[i] = +prompt("Digite um número")
+            if ( i === 0) {
+                maiorNumero = numero[i]
+                menorNumero = numero[i]
+            }
+            if (numero[i] > maiorNumero) {
+                posicaoMaior = i
+                maiorNumero = numero[i]
+            } else if (numero[i] < menorNumero) {
+                posicaoMenor = i
+                menorNumero = numero[i]
+            }
+        }
+        console.log(`Menor: ${posicaoMenor}\nMaior: ${posicaoMaior}`)
+
+        12)
+                let dados = []
+        let seis = 0
+        let um = 0
+        for(let i = 0; i < 100; i++) {
+            dados[i] = (Math.random() * (6 - 1) + 1).toFixed()
+        }
+        for (dados[i] = "6") {
+            seis++
+        } else if (dados[i] = "1") {
+            um++
+        }
+        console.log(`Quantidade de número seis: ${seis}\nQuantidade de números um ${um}`)
+
+        13) 
 
 
