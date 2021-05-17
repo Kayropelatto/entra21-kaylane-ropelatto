@@ -3,10 +3,12 @@
         pares = 0
     for (let i = 0; i < 10; i++) {
         vetor[i] = +prompt(`Digite o ${i + 1}º valor`)
-        if (vetor[i] % 2 === 0) pares++
+        if (vetor[i] % 2 === 0) { 
+            pares++
+    }
     }
     console.log(`A quantidade de números pares digitados foi ${pares}`)
-    console.log(vetor)
+    console.log(Vetor: ${vetor})
 
 2) 
     let vetor = [],
@@ -82,7 +84,7 @@ console.log(vetor)
     console.log(vetor2)
 
 8)
-            let valores = 0,
+    let valores = 0,
         pares = []
     
     for (let i = 6; i > 0;) {
@@ -154,12 +156,9 @@ console.log(vetor)
         let seis = 0
         let um = 0
         for(let i = 0; i < 100; i++) {
-            dados[i] = (Math.random() * (6 - 1) + 1).toFixed()
+            dados[i] = Math.floor(Math.random() * (7 - 1) + 1).toFixed()
         }
-        for (dados[i] = "6") {
-            seis++
-        } else if (dados[i] = "1") {
-            um++
+        switch
         }
         console.log(`Quantidade de número seis: ${seis}\nQuantidade de números um ${um}`)
 
