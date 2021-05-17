@@ -60,6 +60,8 @@ console.log(vetor)
     console.log(vetor)
 
 5) 
+    let vetorNome = []
+    
  
 6)
     let a = []
