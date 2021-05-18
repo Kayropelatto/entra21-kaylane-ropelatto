@@ -1,12 +1,25 @@
 1)        
-    function ehPositivo(numero) {
-        return numero > 0 // caso seja só uma condição de retorno
-    }
-    let numero = +prompt("Digite um número")
-    console.log(ehPositivo(numero))
+        function ehPositivo(numero) {
+            return numero > 0 // caso seja só uma condição de retorno
+        }
+        let numero = +prompt("Digite um número")
+        console.log(ehPositivo(numero))
 
 2)
+        function minimo(a, b) {
+            if (a < b) {
+                return a 
+            } else {
+                return b
+            }
+        }
 
+        let a = +prompt("Digite um número")
+        let b = +prompt("Digite mais um número")
+
+        // let resultado = minimo(a, b) 
+        // console.log(`O menor é ${resultado}`)
+         console.log(minimo(a, b)) // sem armazenar o resultado em uma variável 
 
 3)
         function potencia(a, b) {
@@ -18,6 +31,89 @@
         let resultado = potencia(a, b)
         console.log(`O número ${a} elevado a ${b} é igual a ${resultado}`)
 
+4)
+        function media(a, b, c) {
+            return (a + b + c) / 3
+        }
 
+        let a = +prompt("Digite uma nota")
+        let b = +prompt("Digite uma nota")
+        let c = +prompt("Digite uma nota")
 
+        let resultado = media(a, b, c)
+        console.log(resultado.toFixed(2))
 
+5)
+        function conceito(media) {
+            if(media <= 4.9) {
+                return "D"
+            } else if(media <= 6.9) {
+                return "C"
+            } else if (media <= 8.9){
+                return "B"
+            } else {
+                return "A"
+            }
+        }
+
+        let media = +prompt("Digite a média do aluno")
+        
+        console.log(conceito(media))
+
+6)
+        function pesoIdeal(altura, sexo) {
+            switch (sexo) {
+                case "f":
+                    let calculoF = 62.1 * altura - 44.7
+                    return (calculoF.toFixed(2))
+                break
+                case "m": 
+                    let calculoM = 72.7 * altura - 58
+                    return(calculoM.toFixed(2))
+                break
+            }
+        }
+
+        let altura = +prompt("Digite sua altura")
+        let sexo = prompt("Digite seu sexo\nF - Feminino\nM - Masculino".toUpperCase())
+
+        console.log(pesoIdeal(altura, sexo))
+
+7)
+        function maiorNumero(numeros) {
+            let maior = numeros[0], menor = numeros[0]
+            for (let i = 0; i < numeros.length; i++) {
+                if (numeros[i] > maior) maior = numeros[i]
+                if (numeros[i] < menor) menor = numeros[i]
+                
+            }
+            console.log(`O maior número é ${maior}`)
+            console.log(`O menor número é ${menor}`)
+         
+        }
+
+        function cadastraVetor() {
+            let vetor = []
+            for(let i = 0; i < 50; i++) {
+               vetor[i] = Math.floor(Math.random() * (1000 - 1)) + 1
+            }
+
+            return vetor
+        }
+       
+        let numeros = cadastraVetor()
+        console.log(numeros)
+        maiorNumero(numeros)
+
+8)
+        function idade(dias) {
+            let resultado = (anos * 365) + (meses * 30) + dias
+                return (resultado)
+        }
+        let anos = +prompt("Digite quantos anos você tem")
+        let meses = +prompt("Digite os meses")
+        let dias = +prompt("Digite os dias")
+
+        console.log(idade(dias))
+
+9) 

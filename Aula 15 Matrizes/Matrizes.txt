@@ -1,0 +1,23 @@
+Matrizes
+
+São vetores bidimensionais, ou seja, eles possuem largura (linhas (i))
+e altura (colunas (j))
+Ela é um vetor de vetores, ou seja:
+
+let matriz = [
+	[1, 2, 3]
+	[4, 5, 6]
+	[7, 8, 9]
+]
+
+// declaramos uma variável e abrimos um vetor, nesse vetor,
+incluímos outros vetores que juntos formam uma matriz
+
+Acessar um Elemento dentro da Matriz:
+
+console.log(matriz[0][0]) // 1
+console.log(matriz[1][2]) // 6
+console.log(matriz[2][1]) // 8
+console.log(matriz[0][2]) // 3
+
+console.log(
