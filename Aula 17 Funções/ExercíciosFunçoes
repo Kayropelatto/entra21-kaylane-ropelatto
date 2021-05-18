@@ -1,0 +1,23 @@
+1)        
+    function ehPositivo(numero) {
+        return numero > 0 // caso seja só uma condição de retorno
+    }
+    let numero = +prompt("Digite um número")
+    console.log(ehPositivo(numero))
+
+2)
+
+
+3)
+        function potencia(a, b) {
+            return a ** b
+        }
+        let a = +prompt("Digite um número")
+        let b = +prompt("Digite o exponencial")
+
+        let resultado = potencia(a, b)
+        console.log(`O número ${a} elevado a ${b} é igual a ${resultado}`)
+
+
+
+
