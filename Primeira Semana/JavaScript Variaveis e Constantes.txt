@@ -1,0 +1,61 @@
+JavaScript
+
+Foi inicialmente criado para "tornar as páginas web vivas"
+Os programas escritos nessa linguagem são chamados de Scripts, e 
+podem ser escritos diretamente nas páginas HTML
+Eles não precisam ser compilados para funcionar, eles já possuem
+umalinguagem de alto nível e compilando, torna a linguagem de baixo
+nível
+Dentro do HTML o código do JS se inicía em 
+<body>
+   <script>
+	.....
+   </script>
+</body>
+
+
+Variáveis
+
+São espaços na memória do computador (RAM), onde é armazenado um dado
+mutável durante a execução do algoritmo
+Pode-se pensar nas variáveis como caixas que armazenam dados, nós 
+devemos identificar a caixa e colocar o que for necessário ali dentro,
+essa informação pode ser modificada ao longo do uso ou até descartada
+Regras de Nomenclaturas: 
+Não pode iniciar com símbolo; não pode iniciar com número;
+não pode ser uma palavra-chave (como let); devem ser escritas
+no modelo camelCase: numeroTelefone
+Para trocar o valor de uma variável:
+let a = 1 // a = 1
+let b = 2 // a = 1, b = 2
+let aux = 1 // a = 1, b = 2, aux = 1
+console.log(a, b) // 1 2
+a = b // a = 2, b = 2, aux = 1
+b = aux // a = 2, b = 1, aux = 1
+console,log(a, b) // 2 1
+
+
+
+
+Dentro o JavaScript temos 8 tipos PRIMITIVOS de dados:
+Number (números)
+String ("..." São as palavras, dentro das aspas)
+Biglnt (Junção de números e letras) ?
+Boolean (indica se a informação é true or false)
+Null 
+Undefined (indefinido)
+Object
+Symbol
+
+NaN -> Not is a Number // quando o resultado não gera um número
+
+Constantes
+
+São valores imutáveis, como a const PI = 3.14 // Valor imutável
+const ANO_NASCIMENTO = 2003
+Sempre maiúsculas e com esse espaçamento _
+Se colocarmos por exemplo que PI = 10, então daria um erro
+
+
+
+

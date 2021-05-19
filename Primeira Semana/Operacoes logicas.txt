@@ -1,0 +1,29 @@
+Operadores
+
+Operados Básicos
+
+=  // atribuição
++  // soma
+-   // substração
+/  // divisão
+*  // multiplicação 
+**  // potenciação
+%  // resto
+
+
+Operadores de atribuição compostos
+
+x += y // x = x + y
+x -= y // x = x - y
+x *= y // x = x * y
+x /= y // x = x / y
+x %= y // x = x % y
+x++ // x = x + 1
+x-- // x = x - 1
+
+Ordem dos Operadores:
+
+1. () agrupamentos
+2. ** exponências
+3. *, /, % multiplicação, divisão e resto
+4. +, - adição e subtração

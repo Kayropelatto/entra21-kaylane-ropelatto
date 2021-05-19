@@ -1,0 +1,38 @@
+Entrada de Dados (INPUT)
+
+Para pedir que o usuário digite um valor, usa-se
+let .... = prompt("Digite seu nome")
+let numero = Number(prompt("Digite ou valor") ou +prompt(...)
+
+Caso o usuário não digite nada, dá para colocar um valor padrão 
+utilizável
+let anoAtual = prompt("Digite o ano atual", 2021)
+console.log(anoAtual) // 2021
+
+Dentro do HTML
+
+Saída de dados (OUTPUT)
+
+Exemplos de saída de dados:
+
+alert("Olá Terra") // aparece uma caixinha que trava o restante do 
+código até você confirmar ela
+
+console.log("Olá Terra") // aparece dentro do console
+
+console.log("Olá\nTerra") // quebra a linha no \n
+
+let nome = "Kaylane"
+console.log("O meu nome é " + nome) // O meu nome é Kaylane
+// Concatenar String, pouco utilizado pois ocupa muito 
+espaço no código
+
+let sobrenome = "Ropelatto" 
+console.log(`O meu sobrenome é ${sobrenome}`) // O meu sobrenome é
+Ropelatto
+// Template String, muito utilizado, torna a linguagem mais objetiva
+
+console.log(nome, sobrenome) // Kaylane Ropelatto
+// Mostrar mais de uma variável na mesma saída de dados 
+
+

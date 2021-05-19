@@ -1,0 +1,121 @@
+LÓGICA E ALGORITMOS
+
+O sistema computacional consiste em um conjunto de Hardwares, o corpo, 
+e esses hardwares é o que processa o Software, a mente.
+Hardware -> componentes eletrônicos do dispositivo
+Software -> programas que utilizamos no dia a dia
+Sistema Operacional -> software cuja função é gerencuar os recursos
+do sistema computacional.
+Usuários -> indivíduos que utilizam o software
+
+Algoritmos -> é uma sequência finita de ações executáveis que visam
+obter uma solução para m determinado tipo de problema
+Por exemplo: quando se vai fazer um bolo, precisa:
+
+(INPUT)
+Ingredientes 
+ °.......
+ °.......
+ °.......
+ °.......
+
+(PROCESSAMENTO)
+Modo de Preparo 
+1 ..........
+2 ..........
+3 ..........
+
+(OUTPUT)
+Resultado
+Bolo 
+
+existem fases dentro do algoritmo: 
+Entrada de dados (INPUT)
+Processamento
+Saída de dados (OUTPUT)
+
+Existem algumas formas de representar um algoritmos: 
+Descritiva: são expressos em linguagem natural
+Fluxograma: são expressos através de formas geométricas diferentes que
+indicam ações distintas
+Pseudocódigo: representados através de códigos, assemelha-se ao modo 
+como os programas são escritos.
+
+DESCRITIVA:
+É a representação descritiva de um algoritmo para cálculo da média de 
+um aluno e mostra a situação desse aluno (Aprovado se a nota for maior 
+que 6 ou Reprovado se for menor):
+1. Obter as notas da primeira e da segunda prova;
+2. Calcular a média aritmética entre as duas provas;
+3. Se a média for igual ou maior a 6, o aluno foi aprovado, senão ele 
+ele foi reprovado. 
+
+exercício:
+Representar de forma descritiva os algoritmos para esses casos:
+
+1. Trocar uma lâmpada:
+
+1. Comprar uma lâmpada nova
+2. Desligar a energia
+3. Tirar a lâmpada antiga
+4. Enroscar lâmpada nova
+5. Ligar a energia
+
+2. Fritar um ovo:
+
+1. Pegar panela, ovo, sal e óleo
+2. Colocar óleo na panela e esquentar
+3. Quebrar o ovo e colocar na panela
+4. Deixar fritando
+5. Mexer até fritar
+6. Desligar fogo.
+
+3. Calcular o maior valor entre dois números:
+
+1. Achar os dois valores
+2. Verificar qual dos dois é o maior
+3. Mostrar qual dos dois números é o maior
+
+4. Calcular o resultado da divisão entre dois números
+
+1. Receber os dois números
+2. Dividir o primeiro número pelo segundo
+3. Mostrar o resultado da divisão
+
+
+FLUXOGRAMA-> em imagem dentro da pasta
+1. Fritar um ovo
+2. Trocar uma lâmpada
+3. Um algoritmo que leia três valores e os mostre na ordem inversa
+que foram digitados
+4. Mostrar na tela o maior valor entre dois números
+5. Calcular o resultado da divisão entre dois númer e
+
+
+PSEUDOCÓDIGO:
+Ex:
+
+Algoritmo <nome_do_algoritmo>
+
+	<declaração de variáveis>
+	<subalgoritmos>
+Início
+	<corpo do algoritmo>
+Fim
+
+___
+
+Algoritmo Média
+	Var nota1, nota2, média: real
+Início
+	Leia nota1, nota2
+	média <- (nota1 + nota2) / 2
+	Se média >= 6
+Então
+	Escreva "Aprovado"
+Senão
+	Escreva "Reprovado"
+Fim_se
+Fim.
+
+
