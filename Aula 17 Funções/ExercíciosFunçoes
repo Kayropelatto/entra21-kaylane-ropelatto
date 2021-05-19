@@ -116,7 +116,7 @@
 
         console.log(idade(dias))
 
-9) 
+9) // não foi
         function divisores(numero) {
             if( numero % i === 0) 
         }
