@@ -26,7 +26,7 @@
             return a ** b
         }
         let a = +prompt("Digite um número")
-        let b = +prompt("Digite o exponencial")
+        let b = +prompt("Digite o expoente")
 
         let resultado = potencia(a, b)
         console.log(`O número ${a} elevado a ${b} é igual a ${resultado}`)
