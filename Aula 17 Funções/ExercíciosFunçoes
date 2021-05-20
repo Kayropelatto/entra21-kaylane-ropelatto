@@ -208,3 +208,26 @@ _____________________________________________________________________
 
 1)
 
+3)
+        "use strict"
+        function recebeParametros(palavra, numero) {
+            for(let i = 0; i < numero; i++) {
+                adicionaNumero++
+            }
+            return adicionaNumero
+        }
+        function transformaNumeros(adicionaNumero) {
+            calculo = numero * palavra
+            return calculo
+        }
+        let palavra = Number(prompt("Digite o elemento que irá repetir")),
+            numero = +prompt("Digite a quantidade de vezes que 'oi' irá aparecer"),
+            adicionaNumero = 0,
+            vetor = [],
+            calculo = 0
+
+            vetor = calculo
+            palavra = Number(palavra)
+        
+        console.log(transformaNumeros(adicionaNumero))
+
