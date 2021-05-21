@@ -41,18 +41,33 @@ Só atualizar a página
 	git branch nome // pra criar a branch (nova linha do tempo para trabalhar)
 	git checkout nome // pra entrar dentro da nova branch
 
+	git status // mostra o que tem que ser feito, onde você está dentro do código
+
 	ATALHO = git checkout -b nome // já entra direto
 
 	quando for commitar:
 	git add .
 	git commit -m "nome"
 
+
 	git reset <nome grande da versão do commit> --hard // pra voltar a uma versão anterior de commit
 	git murge // juntar a linha do tempo que você criou para trabalhar com o código central 
 
-	git push origin nome da branch // pra commitar dentro do main
+
+	git push origin nome da branch // pra dar push dentro de uma branch nova
 	entrar no repositorio no navegador
 	
+
+	Pra excluir você não pode estar dentro da branch:
+	git branch -d nome
+
+
+	Pra saber a quantidade de branchs e os nomes:
+	git branch
+	* onde aparecer um * significa que você está dentro dela 
+
+	pra mudar o nome da branch, precisa estar dentro dela
+	git branch -m nome
 
 	Criar um repositório do github no nagevagador usar:
 		Criar repositório
