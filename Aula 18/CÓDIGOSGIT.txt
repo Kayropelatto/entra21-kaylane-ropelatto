@@ -1,0 +1,62 @@
+# GIT - Principais comandos
+
+**git init** // Inicia a linha do tempo
+**git add** // Adiciona ou atualiza mudanças na área de staging
+**git commit** // Adiciona um ponto na linha do tempo
+**git remote add** // Adiciona o link de um repositório remoto ao repositório local
+**git push** // Envia alterações locais para o repositório remoto
+**git log** // Visualiza os pontos na linha do tempo (commits)
+**git status** // Informa o estado das alterações do nosso projeto
+**git show** // Apresenta determinando ponto na história
+**git clone** // Clonar um repositório
+**git pull** // Puxar alterações do repositório remoto
+
+**git branch** // Gerenciar novas linhas do tempo
+**git checkout** // Manipula as linhas do tempo
+**git reset** // Voltar para um ponto na linha do tempo
+**git merge** // Unir as linhas do tempo
+
+**fork** // Criar uma bifurcação de um repositório
+*Como usar:* https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo
+
+
+// Criar pasta, abrir no code
+	Criar arquivo README.md
+	Abrir terminal
+	git init
+	git config --global --list // pra ver se está configurado no usuário certo -> se não estiver só usar o user.name / user.email
+	git status // passa as informações gerais do que está acontecendo
+	git add . // adiciona todos os arquivos para a parte de stage
+	git commit - m "Commit Inicial"
+	git branch -M main
+	git remote add origin <link que eles passam>
+	git push -u origin main
+Só atualizar a página
+	git log // trás todos os comites feitos até o momento
+	git show <numero grande do commit> // mais visual o commit
+	git pull // puxa as alterações
+	git push // manda pro repositório online
+	
+
+	git branch nome // pra criar a branch (nova linha do tempo para trabalhar)
+	git checkout nome // pra entrar dentro da nova branch
+
+	ATALHO = git checkout -b nome // já entra direto
+
+	quando for commitar:
+	git add .
+	git commit -m "nome"
+
+	git reset <nome grande da versão do commit> --hard // pra voltar a uma versão anterior de commit
+	git murge // juntar a linha do tempo que você criou para trabalhar com o código central 
+
+	git push origin nome da branch // pra commitar dentro do main
+	entrar no repositorio no navegador
+	
+
+	Criar um repositório do github no nagevagador usar:
+		Criar repositório
+		copiar código
+		git bash
+		git clone https://github.com/link 
+		
