@@ -1,0 +1,57 @@
+** ARRAYS **
+São vetores, armazenam muitos dados em uma única variável.
+Eles são uma evolução das variáveis já que podemos armazenar uma série 
+de informações.
+Os dados que armazenamos dentro do vetor são chamados de itens.
+
+let vetor = []
+let vetor1 = new Array()
+
+No JavaScript é possível atribuir qualquer tipo de dado a um vetor,
+e também diferentes tipos no mesmo:
+
+let variosTiposVetor = [
+	"string",
+	10,
+	true,
+	null,
+	undefined
+]
+
+
+Para acessar um item específico do vetor é necessário informar o 
+índice do item.
+O índice sempre começa com 0 e segue em: 
+0, 1, 2, 3, 4,....
+
+ex:
+console.log(variosTiposVetor[1])
+Chama o 10
+
+
+Para mudar um item dentro do array:
+variosTiposVetor[2] = "mudou"
+nome[indice] = o que vai substituir
+
+
+Para saber o tamanho do vetor:
+console.log(variosTiposVetor.length)
+-> ele não indica a quantidade em si de itens, mas sim o último
+índice.
+
+
+Exercício Vetor:
+
+Leia 10 números e mostre na tela os valores no sentido que foram digitados
+e ao contrário:
+
+let numeros = [] // comecei declarando um vetor vazio
+	for (let i = 0; i <10; i++) { //estou armazenando os números dento do vetor [i]
+		numeros[i] = +prompt("Digite um número")
+	}
+	for (let i = 0, tamanhoVetor = numeros.length; i < tamanhoVetor; i++) {
+		console.log(numeros[i]) //iterando sobre o vetor (mostrar o que está armazenado)
+	}
+	for (let i = numeros.length - 1; i >= 0; i--) {
+		console.log(numeros[i]) //mostrando na ordem inversa
+	}
