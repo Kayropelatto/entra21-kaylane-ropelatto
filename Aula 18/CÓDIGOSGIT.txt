@@ -48,6 +48,7 @@ Só atualizar a página
 	quando for commitar:
 	git add .
 	git commit -m "nome"
+	git push origin NOMEBRANCH
 
 
 	git reset <nome grande da versão do commit> --hard // pra voltar a uma versão anterior de commit
