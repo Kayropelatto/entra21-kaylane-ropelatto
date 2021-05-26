@@ -1,0 +1,7 @@
+Para calcular um valor % se usa por exemplo:
+preço = x
+desconto = y
+calculo: preco * (desconto / 100)
+
+E para saber quanto fica o preço com o desconto: 
+total: preço - calculo

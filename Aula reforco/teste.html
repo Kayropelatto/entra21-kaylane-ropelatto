@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numeros = +prompt("Digite um número")
+        let contadorIntervalos = 0
+        let contadorForaIntervalo = 0
+        while(numeros > 0) {
+            if(numeros >= 10 && numeros <= 20) {
+                contadorIntervalos++
+            }
+            contadorForaIntervalo++
+        }
+        console.log(`Dentro do intervao: ${contadorIntervalos}\nFora do intervalo: ${contadorForaIntervalo}`)
+    </script>
+</body>
+</html>
