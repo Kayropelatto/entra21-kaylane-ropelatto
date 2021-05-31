@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let calculadora = {
+            lerValores() {
+                cosole.log(`Os valores são ${this.numero1} e ${this.numero2}`)
+            }
+
+        }
+
+        function lerValores() {
+                let numero1 = +prompt("Digite um número!")
+                let numero2 = +prompt("Digite outro número")
+                return [numero1, numero2]
+            }
+        let numeros = lerValores()
+        function soma(numeros) {
+                let soma = numeros[0] + numeros[1]
+                return soma
+        }       
+        function multiplicacao(numeros) {
+            let multiplicacao = numeros[0] + numeros[1]
+            return multiplicacao
+        }
+    lerValores()
+    soma(numeros)
+    multiplicacao(numeros)
+    </script>
+</body>
+</html>
+2) Crie o objeto calculadora com três métodos:
+lerValores() -> pede dois valores ao usuário e os salva como
+propriedades.
+soma() -> retorna a soma dos valores salvos
+multiplicacao() -> retorna a multiplicação dos valores salvos.
